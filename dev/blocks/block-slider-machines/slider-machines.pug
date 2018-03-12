@@ -1,56 +1,143 @@
-// call form
-
-.call-form
+.slider-machines
 
 	// container
 
 	.container
 
-		// row
+		.row
+
+			.col-md-1
+
+			.col-md-6.slider-machines__title
+
+				h3
+					| Станок для заточки корончатых сверел GRAUMS NT-01
+
+			.col-md-5
 
 		.row
 
-			// column
+			.col-md-1
 
-			.col-md-12
+				// previews
 
-				// call form container
+				// preview block
 
-				.call-form__container
+				a.slider-machines__preview-block.previewOne(href="#" title="")
+					img(src="../img/previews/preview-1.jpg" alt="@@")
+					p
+						| Название блока
 
-					// content
-					.call-form__content
+				// preview block
 
-						// description
-						.call-form__content__description
+				a.slider-machines__preview-block.previewTwo(href="#" title="")
+					img(src="../img/previews/preview-2.jpg" alt="@@")
+					p
+						| Название блока
 
-							h3
-								| Архитектурный проект в подарок
+				// preview block
 
-							.call-form__content__description__line
+				a.slider-machines__preview-block.previewThree(href="#" title="")
+					img(src="../img/previews/preview-3.jpg" alt="@@")
+					p
+						| Название блока						
+
+			.col-md-7
+
+				// main information
+
+				.slider-machines__main-info
+
+					// photo content
+
+					.slider-machines__content
+
+						// full machine
+
+						.slider-machines__full-machine-body
+
+							// image 1
+							.full-machineOne
+								img(src="../img/image-1.jpg" alt="@@")
+
+							// image 2
+							.full-machineTwo
+								img(src="../img/image-2.jpg" alt="@@")
+
+							// image 3
+							.full-machineThree
+								img(src="../img/image-3.jpg" alt="@@")
+
+						// link
+						a.slider-machines__link-detail(href="#" title="")
+							| Подробнее о заточке корончатых сверл.
+
+					// main description
+
+					.slider-machines__content__main-description
+
+						h4
+							| Назначение
+
+						p
+							| Заточной станок «ГРАУМС – К50 эконом» предназначен для заточки корончатых сверл (фрез) из быстрорежущей стали и сверл с твердосплавными пластинами с максимальными размерами 50х50.
+
+						h4
+							| Общие характеристики
+
+						p
+							| Заточной станок «ГРАУМС – КС50 эконом» спроектирован с учетом потребительских требований к данному изделию, что позволило создать эконом класса с минимальными габаритами, максимальной точностью устанавливаемых размеров, низкого электропотребления, простоты и удобства производимых операций. В станке реализованы высокоточные решения установки количества зубьев, установки горизонта обрабатываемого зуба и перестановка следующего зуба с последующей его фиксацией. 
+
+			.col-md-4
+
+				// detail info
+
+				.tabs-body
+
+					ul.tabs-links
+						li: a.tab-linkOne.tabs-links__active(href="#" title="")
+							| Преимущества
+						li: a.tab-linkTwo(href="#" title="")
+							| Характеристики
+						li: a.tab-linkThree(href="#" title="")
+							| Комплектация
+
+					// box for content
+
+					.tabs-body__tab-content-box
+
+						// tab content 1
+						.tab-contentOne
+
+							// list
+
+							ul.tabs-body__tab-content-box__list
+
+								li
+									| This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+								li
+									| This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+								li
+									| This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+								li
+									| This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+
+							// link
+
+							a.link-download-manual(href="#" title="")
+								| Скачать руководство по эксплуатации GRAUMS NT-01
+
+							a.link-view-video(href="#" title="")
+								| Смотреть видео о станке GRAUMS NT-01
+
+						// tab content 2
+						.tab-contentTwo
 
 							p
-								| Заполните форму заявки, чтобы получить индивидуальный архитектурный проект каркасного дома в подарок
+								| CONTENT 2
 
-						//  form
-
-						form.call-form__content__form(action="/" method="post")
-
-							h6
-								| ЗАКАЖИТЕ КОНСУЛЬТАЦИЮ
-
-							.call-form__content__form__line
-
-							.call-form__content__form__input
-								input.call-form__content__form__input__name(type="text" name="" placeholder="Имя" required)
-
-							.call-form__content__form__input
-								input.call-form__content__form__input__phone(type="text" name="" placeholder="Телефон" required)
-
-							.call-form__content__form__input
-								input.call-form__content__form__input__email(type="text" name="" placeholder="E-mail" required)
+						// tab content 3
+						.tab-contentThree
 
 							p
-								| Ответ в течение 15 минут
-
-							input.btn-green(type="submit" value="Подробнее")
+								| CONTENT 3
