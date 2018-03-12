@@ -1,128 +1,31 @@
 @media only screen and (min-width : @mobile) and  (max-width : @desktop) {
 
-	// call form
+	// about manufacture
 
-	.call-form {
-		height: 632px;
-		background: @white url('../img/call-form-bg.jpg') no-repeat center;
-	}
+	.about-manufacture {
+		height: auto;
+		padding: 40px 0;
+		background: url('../img/bg.png') repeat;
 
-	.call-form__container {
-		margin: 70px auto;
-		position: relative;
-		width: 1024px;
-		height: 437px;
-		background: 0;
-		border: 15px solid @green;
-	}
-
-	.call-form__content {
-		margin: 0 0 0 -50px;
-		position: absolute;
-		width: 1024px;
-		height: 437px;
-	}
-
-	.call-form__content__description {
-		float: left;
-		width: 500px;
-
-		h3 {
-			margin-top: 50px;
-			font: 46px 'muller_regularregular';
-			color: #3c3c3c;
-		}
-
-		p {
-			font: 30px 'muller_regularregular';
-			color: #3c3c3c;
-		}
-
-	}
-
-	.call-form__content__description__line {
-		margin: 30px 0 40px 0;
-		width: 74px;
-		height: 5px;
-		background: #3c3c3c;
-	}
-
-	.call-form__content__form {
-		width: 360px;
-		float: right;
-
-		h6 {
-			margin-top: 20px;
-			font: 24px 'mullerbold';
-			color: #3c3c3c;
+		h2 {
+			margin: 0;
+			padding: 0;
+			margin-bottom: 30px;
+			font: 24px 'robotobold';
+			color: @blue-dark;
 			text-transform: uppercase;
 		}
 
 		p {
-			font: 14px 'mullerlight';
-			color: #3c3c3c;
+			font: 12px 'robotoregular';
+			color: #3a3a3a;
+		}
+
+		img {
+			margin-top: 20px;
+			display: block;
 		}
 
 	}
-
-	.call-form__content__form__line {
-		margin: 10px 0 26px 0;
-		width: 74px;
-		height: 3px;
-		background: #606061;
-	}
-
-	.call-form__content__form__input {
-		width: 336px;
-		height: 52px;
-		margin-bottom: 17px;
-
-		font: 16px 'mullerlight';
-		color: #000;
-
-		input[type=text] {
-			padding: 0 50px;
-			width: 100%;
-			height: 50px;
-			border: 1px solid #5e5f57;
-			border-radius: 3px;
-
-			&:hover {
-				border-color: @green;
-			}
-
-		}
-
-	}
-
-	.call-form__content__form__input__name {
-		background: url('../img/icons/icon-1.png') no-repeat 16px 10px;
-	}
-
-	.call-form__content__form__input__phone {
-		background: url('../img/icons/icon-2.png') no-repeat 16px 10px;
-	}
-
-	.call-form__content__form__input__email {
-		background: url('../img/icons/icon-3.png') no-repeat 16px 10px;
-	}
-
-	.call-form__content__form {
-
-		input[type=submit] {
-			margin-top: 10px;
-			width: 290px !important;
-			height: 56px !important;
-			border: 0;
-			border-radius: 3px;
-
-			&:hover {
-				background: #000;
-			}
-
-		}
-
-	}
-
-
+	
 }
