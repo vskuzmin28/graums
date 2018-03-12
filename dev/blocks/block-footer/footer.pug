@@ -1,12 +1,96 @@
 footer
 
-	// container
+	// information
 
-	.container
+	.footer__info
 
-		.row
+		// container
 
-			.col-md-12
+		.container
 
-				p
-					| Все права защищены
+			.row
+
+				// column
+
+				.col-md-4
+
+					// footer navigation
+
+					ul.footer__navigation
+						li: a(href="#" title="")
+							| О производителе
+						li: a(href="#" title="")
+							| Главная
+						li: a(href="#" title="")
+							| Дистрибьюторам
+						li: a(href="#" title="")
+							| Заточка корончатых сверл
+						li: a(href="#" title="")
+							| Политика конфиденциальности
+						li: a(href="#" title="")
+							| Пользовательское соглашение					
+
+				// column
+
+				.col-md-4
+
+					// footer address field
+
+					.footer__address-field
+						span
+							| Адрес:
+						p
+							| г. Омск, ул. Ипподромная, 2, офис 413
+
+					// footer contacts field
+
+					.footer__contacts-field
+						span
+							| Контакты:
+						p
+							| Тел.: 8-800-500-25-50
+						p
+							| E-mail: graums@mail.ru
+
+				// column
+
+				.col-md-4
+
+					// footer call form
+
+					form.footer__call-form(action="/" method="post")
+
+						// field
+						.call-form-field
+							input(type="text" name="-" placeholder="Ваше имя" required)
+
+						// field
+						.call-form-field
+							input(type="text" name="-" placeholder="Телефон" required)
+
+						// field
+						.call-form-field
+							input(type="text" name="-" placeholder="E-mail" required)
+
+						// field
+						.call-form-field
+							textarea(name="-" placeholder="Комментарий" required)
+
+						// field
+						.call-form-field
+							input(type="submit" name="-" value="Отправить")
+
+	// copyright
+
+	.footer__copyright
+
+		// container
+
+		.container
+
+			.row
+
+				.col-md-12
+
+					p
+						| Все права защищены

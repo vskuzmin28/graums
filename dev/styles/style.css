@@ -46,10 +46,88 @@ ul {
 }
 @media only screen and (min-width: 1140px) {
   footer {
+    height: auto;
+  }
+  .footer__info {
+    padding: 20px 0;
+    height: auto;
+    background: #003567;
+    color: #fff;
+  }
+  .footer__info a,
+  .footer__info a:hover {
+    color: #fff;
+  }
+  .footer__navigation {
+    list-style: none;
+  }
+  .footer__navigation li a,
+  .footer__navigation li a:hover {
+    font: 14px 'robotoregular';
+    color: #fff;
+    line-height: 36px;
+  }
+  .footer__address-field,
+  .footer__contacts-field {
+    height: 60px;
+    margin-bottom: 42px;
+  }
+  .footer__address-field span,
+  .footer__contacts-field span {
+    display: block;
+    margin-bottom: 16px;
+    font: 16px 'robotomedium';
+  }
+  .footer__address-field p,
+  .footer__contacts-field p {
+    font: 14px 'robotoregular';
+  }
+  .footer__call-form {
+    width: 216px;
+    float: right;
+  }
+  .call-form-field {
+    margin-bottom: 8px;
+    width: auto;
+    height: auto;
+    color: #353535;
+  }
+  .call-form-field input[type=text] {
+    padding: 0 14px;
+    width: 100%;
+    height: 38px;
+    background: #fff;
+    font: 11px 'robotolight';
+    color: #353535;
+    border: 0;
+    border-radius: 4px;
+  }
+  .call-form-field textarea {
+    padding: 10px;
+    height: 57px;
+    background: #fff;
+    width: 100%;
+    resize: none;
+    font: 11px 'robotolight';
+    color: #353535;
+  }
+  .call-form-field input[type=submit] {
+    width: 100%;
+    height: 44px;
+    background: #efd12d;
+    border: 0;
+    border-radius: 45px;
+    font: 14px 'robotomedium';
+    color: #fff;
+  }
+  .call-form-field input[type=submit]:hover {
+    background: #003567;
+  }
+  .footer__copyright {
     height: 57px;
     background: #fff;
   }
-  footer p {
+  .footer__copyright p {
     font: 12px 'robotoregular';
     color: #3a3a3a;
     line-height: 57px;
@@ -58,10 +136,17 @@ ul {
 }
 @media only screen and (min-width: 320px) and (max-width: 1140px) {
   footer {
+    height: auto;
+  }
+  .footer__info {
+    height: auto;
+    background: #003567;
+  }
+  .footer__copyright {
     height: 57px;
     background: #fff;
   }
-  footer p {
+  .footer__copyright p {
     font: 12px 'robotoregular';
     color: #3a3a3a;
     line-height: 57px;
