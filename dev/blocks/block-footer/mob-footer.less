@@ -7,8 +7,112 @@
 	}
 
 	.footer__info {
+		padding: 20px 0;
 		height: auto;
 		background: @blue-dark;
+		color: @white;
+
+		a, a:hover {
+			color: @white;
+		}
+
+	}
+
+	// footer navigation
+
+	.footer__navigation {
+		list-style: none;
+
+		li a, li a:hover {
+			font: 14px 'robotoregular';
+			color: @white;
+			line-height: 36px;
+		}
+
+	}
+
+	// footer address field
+
+	.footer__address-field,
+	.footer__contacts-field {
+		height: 60px;
+		//margin-top: 18px;
+		margin-bottom: 42px;
+
+		span {
+			display: block;
+			margin-bottom: 16px;
+			font: 16px 'robotomedium';
+		}
+
+		p {
+			font: 14px 'robotoregular';
+		}
+
+	}
+
+	// footer call form
+
+	.footer__call-form {
+		width: 216px;
+		float: right;
+	}
+
+	// call form field
+
+	.call-form-field {
+		margin-bottom: 8px;
+		width: auto;
+		height: auto;
+		color: #353535;
+
+		input[type=text] {
+			padding: 0 14px;
+			width: 100%;
+			height: 38px;
+			background: @white;
+
+			font: 11px 'robotolight';
+			color: #353535;
+
+			border: 0;
+			border-radius: 4px;
+		}
+
+		textarea {
+			padding: 10px;
+			height: 57px;
+			background: @white;
+			width: 100%;
+			resize: none;
+
+			border: 0;
+			border-radius: 4px;
+
+			font: 11px 'robotolight';
+			color: #353535;
+		}
+
+		// submit
+
+		input[type=submit] {
+			width: 100%;
+			height: 44px;
+			background: @yellow;
+
+			border: 0;
+			border-radius: 45px;
+
+			font: 14px 'robotomedium';
+			color: @white;
+
+			&:hover {
+				background: @white;
+				color: @black;
+			}
+
+		}
+
 	}
 
 	// footer copyright
