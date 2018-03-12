@@ -88,6 +88,9 @@ ul {
   .about-manufacture img {
     margin-top: 20px;
     display: block;
+    margin: 20px auto;
+    width: 80%;
+    height: auto;
   }
 }
 @media only screen and (min-width: 1140px) {
@@ -324,6 +327,9 @@ ul {
     color: #3a3a3a;
     line-height: 57px;
     text-align: center;
+  }
+  .footer__call-form {
+    display: none;
   }
 }
 @media only screen and (min-width: 1140px) {
@@ -390,7 +396,7 @@ ul {
     height: 66px;
   }
   .logo img {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
   .header__info {
@@ -524,7 +530,15 @@ ul {
     font: 16px 'robotomedium';
     color: #141414;
   }
+  .main-screen img {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    height: auto;
+  }
   .main-screen__list {
+    width: 60%;
+    margin: 0 auto;
     margin-top: 30px;
     height: auto;
     list-style: none;
@@ -768,35 +782,37 @@ ul {
 }
 @media only screen and (min-width: 320px) and (max-width: 1140px) {
   nav {
-    height: 55px;
+    height: auto;
     background: #fff;
     border-top: 2px solid #003567;
     border-bottom: 2px solid #003567;
   }
   .navigation {
+    width: 60%;
     height: auto;
     overflow: hidden;
     list-style: none;
     margin: 0;
     padding: 0;
+    margin: 0 auto;
   }
   .navigation li {
-    padding: 0 76px;
-    float: left;
+    padding: 0;
+    float: none;
     height: 55px;
-    background: url('../img/icons/icon-2.png') no-repeat 0px 20px;
+    background: 0;
   }
   .navigation li:nth-child(1) {
     padding-left: 0;
     background: 0;
   }
   .navigation li:nth-child(5) {
-    padding-left: 76px;
+    padding-left: 0;
     padding-right: 0;
   }
   .navigation li a,
   .navigation li a:hover {
-    font: 14px 'robotomedium';
+    font: 12px 'robotomedium';
     color: #003567;
     line-height: 50px;
   }
@@ -838,7 +854,8 @@ ul {
 }
 @media only screen and (min-width: 320px) and (max-width: 1140px) {
   .price {
-    height: 182px;
+    padding: 20px 0;
+    height: auto;
     background: url('../img/price-bg.jpg') no-repeat center;
     background-size: cover;
     color: #fff;
@@ -846,7 +863,7 @@ ul {
   }
   .price h3 {
     margin: 0;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 8px;
     padding: 0;
     font: 24px 'robotobold';
@@ -906,34 +923,45 @@ ul {
     margin-bottom: 20px;
   }
   .slider-machines__preview-block {
+    float: none;
     display: block;
-    width: 84px;
+    width: auto;
     height: 122px;
   }
   .slider-machines__preview-block img {
+    float: left;
+    margin-right: 10px;
     margin-bottom: 4px;
     display: block;
     width: 84px;
     height: 84px;
   }
   .slider-machines__preview-block p {
+    float: left;
     font: 12px 'robotoregular';
     color: #141414;
+    line-height: 84px;
   }
   .slider-machines__content {
-    float: left;
-    width: 352px;
-    margin-right: 16px;
+    float: none;
+    width: auto;
+    margin-right: 0px;
   }
   .slider-machines__full-machine-body {
-    width: 352px;
-    height: 352px;
+    width: 100%;
+    height: auto;
     position: relative;
     background: #000;
   }
+  .slider-machines__full-machine-body img {
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
   .slider-machines__content__main-description {
-    float: left;
-    width: 260px;
+    float: none;
+    width: auto;
   }
   .slider-machines__content__main-description h4 {
     margin: 0;
@@ -943,7 +971,7 @@ ul {
     margin-bottom: 10px;
   }
   .slider-machines__content__main-description p {
-    font: 10px 'robotoregular';
+    font: 12px 'robotoregular';
     color: #3a3a3a;
   }
   .slider-machines__link-detail {
@@ -957,10 +985,13 @@ ul {
     line-height: 16px;
   }
   .tabs-body {
+    margin-top: 30px;
     height: auto;
     overflow: hidden;
   }
   .tabs-links {
+    margin: 0 auto;
+    width: 50%;
     list-style: none;
   }
   .tabs-links li {
@@ -1167,15 +1198,16 @@ ul {
   .where-buy__links__field img {
     margin-right: 14px;
     margin-top: 5px;
-    display: block;
+    display: none;
     width: 34px;
     height: auto;
     float: right;
   }
   .where-buy__links__field a,
   .where-buy__links__field a:hover {
-    float: right;
+    float: none;
     display: block;
+    margin: 0 auto;
     width: 244px;
     height: 46px;
     background: #fff;
