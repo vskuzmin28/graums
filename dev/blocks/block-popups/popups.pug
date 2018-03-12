@@ -1,0 +1,39 @@
+// call popup
+
+.popup.call-popup
+
+	// icon close
+
+	a.popup__icon-close(href="#" title="")
+		img(src="../img/icons/icon-close.png" alt="")
+
+	h4
+		| Запрос <br/> информации на почту
+
+	form.send-form(action="../mail.php" method="post")
+		.popup__input
+			input(type="text" name="name" placeholder="Ваше ФИО*" required)
+		.popup__input
+			input(type="text" name="tel" placeholder="Ваш телефон*" required)
+		.popup__input
+			input(type="text" name="email" placeholder="Ваш e-mail")
+		.popup__checkbox
+			label
+				input(type="checkbox" checked required)
+				p
+					| Согласие на обработку персональных данных
+		.popup__button
+			input(type="hidden" id="action" name="action" value="submitform")
+			input.button-blue(type="submit" value="Отправить")
+
+// thanks
+
+.popup.popup-thanks
+
+	// icon close
+
+	a.popup__icon-close(href="#" title="")
+		img(src="../img/icon-close.png" alt="")
+
+	p
+		| Спасибо! Ваша заявка успешно отравлена!

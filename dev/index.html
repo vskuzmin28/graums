@@ -33,7 +33,7 @@
                 <li><a href="#" title="">Покупателям</a></li>
                 <li><a href="#" title="">Дистрибьюторам</a></li>
               </ul>
-              <p>Центр поддержки покупателей</p><span>8-800-500-25-50</span><a href="#" title="">Заказать обратный звонок</a>
+              <p>Центр поддержки покупателей</p><span>8-800-500-25-50</span><a class="link-call-popup" href="#" title="">Заказать обратный звонок</a>
             </div>
           </div>
         </div>
@@ -338,6 +338,38 @@
         </div>
       </div>
     </footer>
+    <!-- popups-->
+    <!-- call popup-->
+    <div class="popup call-popup">
+      <!-- icon close--><a class="popup__icon-close" href="#" title=""><img src="../img/icons/icon-close.png" alt=""></a>
+      <h4>Запрос <br/> информации на почту</h4>
+      <form class="send-form" action="../mail.php" method="post">
+        <div class="popup__input">
+          <input type="text" name="name" placeholder="Ваше ФИО*" required>
+        </div>
+        <div class="popup__input">
+          <input type="text" name="tel" placeholder="Ваш телефон*" required>
+        </div>
+        <div class="popup__input">
+          <input type="text" name="email" placeholder="Ваш e-mail">
+        </div>
+        <div class="popup__checkbox">
+          <label>
+            <input type="checkbox" checked required>
+            <p>Согласие на обработку персональных данных</p>
+          </label>
+        </div>
+        <div class="popup__button">
+          <input type="hidden" id="action" name="action" value="submitform">
+          <input class="button-blue" type="submit" value="Отправить">
+        </div>
+      </form>
+    </div>
+    <!-- thanks-->
+    <div class="popup popup-thanks">
+      <!-- icon close--><a class="popup__icon-close" href="#" title=""><img src="../img/icon-close.png" alt=""></a>
+      <p>Спасибо! Ваша заявка успешно отравлена!</p>
+    </div>
     <!-- scripts-->
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/jquery.bpopup.min.js"></script>

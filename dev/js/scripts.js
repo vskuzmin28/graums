@@ -1,8 +1,8 @@
 // call popup
 
-$('.link-call-expert').click(function(e){
+$('.link-call-popup').click(function(e){
   e.preventDefault();
-  $('.call-expert').bPopup({
+  $('.call-popup').bPopup({
     closeClass:'popup__icon-close',
       amsl: 0,
       positionStyle: 'fixed',
@@ -11,7 +11,7 @@ $('.link-call-expert').click(function(e){
 
 // functional call form
 
-$('.call-expert, .manager-consultation, .make-an-order, .popup-thanks').hide();
+$('.call-popup, .popup-thanks').hide();
 
 $('.send-form').submit(function() {
       $.post($(this).attr('action'), $(this).serialize(), function(res) {         
@@ -95,7 +95,7 @@ $('.previewThree').click(function (e) {
 $(window).on("scroll", function () {
   var scrollFromTop = $(document).scrollTop();
   var heightHeader = 162;
-  var heightNav = 380;
+  var heightNav = 450;
 
   if (scrollFromTop > heightHeader) {
     $('header').addClass('header-fixed');
