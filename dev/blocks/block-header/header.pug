@@ -1,56 +1,39 @@
-// call form
-
-.call-form
+header
 
 	// container
 
 	.container
 
-		// row
-
 		.row
 
-			// column
+			.col-md-2
 
-			.col-md-12
+				// logo
 
-				// call form container
+				a.logo(href="#" title="")
+					img(src="../img/logo.png" alt="@@")
 
-				.call-form__container
+			.col-md-7
+				| 112
 
-					// content
-					.call-form__content
+			.col-md-3
+				
+				// header information
 
-						// description
-						.call-form__content__description
+				.header__info
 
-							h3
-								| Архитектурный проект в подарок
+					// links
+					ul.header__info__links
+						li: a(href="#" title="")
+							| Покупателям
+						li: a(href="#" title="")
+							| Дистрибьюторам
 
-							.call-form__content__description__line
+					p
+						| Центр поддержки покупателей
 
-							p
-								| Заполните форму заявки, чтобы получить индивидуальный архитектурный проект каркасного дома в подарок
+					span
+						| 8-800-500-25-50
 
-						//  form
-
-						form.call-form__content__form(action="/" method="post")
-
-							h6
-								| ЗАКАЖИТЕ КОНСУЛЬТАЦИЮ
-
-							.call-form__content__form__line
-
-							.call-form__content__form__input
-								input.call-form__content__form__input__name(type="text" name="" placeholder="Имя" required)
-
-							.call-form__content__form__input
-								input.call-form__content__form__input__phone(type="text" name="" placeholder="Телефон" required)
-
-							.call-form__content__form__input
-								input.call-form__content__form__input__email(type="text" name="" placeholder="E-mail" required)
-
-							p
-								| Ответ в течение 15 минут
-
-							input.btn-green(type="submit" value="Подробнее")
+					a(href="#" title="")
+						| Заказать обратный звонок
