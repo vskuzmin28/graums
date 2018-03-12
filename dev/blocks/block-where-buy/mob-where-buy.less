@@ -1,128 +1,72 @@
 @media only screen and (min-width : @mobile) and  (max-width : @desktop) {
 
-	// call form
+	// where buy
 
-	.call-form {
-		height: 632px;
-		background: @white url('../img/call-form-bg.jpg') no-repeat center;
+	.where-buy {
+		padding: 44px 0;
+		height: auto;
 	}
 
-	.call-form__container {
-		margin: 70px auto;
-		position: relative;
-		width: 1024px;
-		height: 437px;
-		background: 0;
-		border: 15px solid @green;
-	}
-
-	.call-form__content {
-		margin: 0 0 0 -50px;
-		position: absolute;
-		width: 1024px;
-		height: 437px;
-	}
-
-	.call-form__content__description {
-		float: left;
-		width: 500px;
+	.where-buy__info {
+		height: auto;
 
 		h3 {
-			margin-top: 50px;
-			font: 46px 'muller_regularregular';
-			color: #3c3c3c;
+			margin: 0;
+			padding: 0;
+			font: 24px 'robotobold';
+			color: @blue-dark;
 		}
 
 		p {
-			font: 30px 'muller_regularregular';
-			color: #3c3c3c;
+			margin-top: 14px;
+			font: 16px 'robotoregular';
+			color: #3a3a3a;
 		}
 
 	}
 
-	.call-form__content__description__line {
-		margin: 30px 0 40px 0;
-		width: 74px;
-		height: 5px;
-		background: #3c3c3c;
+	// links
+
+	.where-buy__links {
+		height: auto;
 	}
 
-	.call-form__content__form {
-		width: 360px;
-		float: right;
+	.where-buy__links__field {
+		height: 50px;
+		margin-bottom: 20px;
 
-		h6 {
-			margin-top: 20px;
-			font: 24px 'mullerbold';
-			color: #3c3c3c;
-			text-transform: uppercase;
+		img {
+			margin-right: 14px;
+			margin-top: 5px;
+			display: block;
+			width: 34px;
+			height: auto;
+			float: right;
 		}
 
-		p {
-			font: 14px 'mullerlight';
-			color: #3c3c3c;
-		}
+		a, a:hover {
+			float: right;
+			display: block;
+			width: 244px;
+			height: 46px;
+			background: @white;
+			border: 2px solid @blue-dark;
+			border-radius: 4px;
 
-	}
-
-	.call-form__content__form__line {
-		margin: 10px 0 26px 0;
-		width: 74px;
-		height: 3px;
-		background: #606061;
-	}
-
-	.call-form__content__form__input {
-		width: 336px;
-		height: 52px;
-		margin-bottom: 17px;
-
-		font: 16px 'mullerlight';
-		color: #000;
-
-		input[type=text] {
-			padding: 0 50px;
-			width: 100%;
-			height: 50px;
-			border: 1px solid #5e5f57;
-			border-radius: 3px;
-
-			&:hover {
-				border-color: @green;
-			}
-
+			font: 12px 'robotoregular';
+			color: @blue-dark !important;
+			text-decoration: none;
+			text-align: center;
+			line-height: 42px;
 		}
 
 	}
 
-	.call-form__content__form__input__name {
-		background: url('../img/icons/icon-1.png') no-repeat 16px 10px;
+	.where-buy__map {
+		margin: 10px auto;
+		display: block;
+		width: 100%;
+		height: auto;
 	}
-
-	.call-form__content__form__input__phone {
-		background: url('../img/icons/icon-2.png') no-repeat 16px 10px;
-	}
-
-	.call-form__content__form__input__email {
-		background: url('../img/icons/icon-3.png') no-repeat 16px 10px;
-	}
-
-	.call-form__content__form {
-
-		input[type=submit] {
-			margin-top: 10px;
-			width: 290px !important;
-			height: 56px !important;
-			border: 0;
-			border-radius: 3px;
-
-			&:hover {
-				background: #000;
-			}
-
-		}
-
-	}
-
 
 }
