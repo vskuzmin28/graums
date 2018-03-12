@@ -1,0 +1,38 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name="theme-color" content="#80a535")
+    link(rel="shortcut icon" href="img/favicon.png" type="image/png")  
+    link(rel="icon" type="image/png" href="../img/favicons/16x16.png" sizes="16x16")
+    link(rel="icon" type="image/png" href="../img/favicons/32x32.png" sizes="32x32")
+    link(rel="icon" type="image/png" href="../img/favicons/96x96.png" sizes="96x96")
+    title Graums | local page
+    link(rel='stylesheet', href='../styles/bootstrap.css')
+    link(rel='stylesheet', href='../styles/jquery.fancybox.min.css')
+    link(rel='stylesheet', href='../styles/normalize.css')
+    link(rel='stylesheet', href='../styles/animate.css')
+    link(rel='stylesheet', href='../styles/style.css')
+  body
+
+    // header
+
+    include ./blocks/block-header/header.pug
+
+    // content for local page
+
+    include ./blocks/block-local-pages/local-pages.pug
+
+    // footer
+
+    include ./blocks/block-footer/footer.pug
+
+    // scripts
+
+    script(src='../js/jquery-3.2.1.min.js')
+    script(src='../js/jquery.bpopup.min.js')
+    script(src='../js/smooth-scroll.js')
+    script(src='../js/scripts.js')
+
+    // / scripts
