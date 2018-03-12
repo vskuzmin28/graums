@@ -90,3 +90,25 @@ $('.previewThree').click(function (e) {
   $('.full-machineOne, .full-machineTwo').hide();
 })
 
+// fix header
+
+$(window).on("scroll", function () {
+  var scrollFromTop = $(document).scrollTop();
+  var heightHeader = 162;
+  var heightNav = 380;
+
+  if (scrollFromTop > heightHeader) {
+    $('header').addClass('header-fixed');
+  } else {
+    $('header').removeClass('header-fixed');
+  }
+
+  if (scrollFromTop > heightNav) {
+    $('nav').addClass('navigation-fixed');
+  } else {
+    $('nav').removeClass('navigation-fixed');
+  }
+
+});
+
+

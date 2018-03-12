@@ -333,110 +333,6 @@ ul {
   }
 }
 @media only screen and (min-width: 1140px) {
-  header {
-    padding: 24px 0;
-    background: #003567;
-  }
-  .logo {
-    display: block;
-    float: left;
-    width: 309px;
-    height: 66px;
-  }
-  .logo img {
-    width: 100%;
-    height: auto;
-  }
-  .header__info {
-    height: auto;
-    color: #fff;
-  }
-  .header__info p {
-    margin-top: -6px;
-    font: 12px 'robotoregular';
-  }
-  .header__info span {
-    margin-top: -6px;
-    display: block;
-    font: 20px 'robotomedium';
-    color: #efd12e;
-  }
-  .header__info a,
-  .header__info a:hover {
-    font: 12px 'robotolight';
-    color: #fff;
-    text-decoration: underline;
-  }
-  .header__info__links {
-    margin-top: -6px;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    list-style: none;
-  }
-  .header__info__links li a,
-  .header__info__links li a:hover {
-    margin-right: 18px;
-    display: block;
-    float: left;
-    font: 10px 'robotolight';
-    color: #fff;
-    text-decoration: none;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 1140px) {
-  header {
-    padding: 24px 0;
-    background: #003567;
-  }
-  .logo {
-    display: block;
-    float: left;
-    width: 309px;
-    height: 66px;
-  }
-  .logo img {
-    width: 90%;
-    height: auto;
-  }
-  .header__info {
-    height: auto;
-    color: #fff;
-  }
-  .header__info p {
-    margin-top: -6px;
-    font: 12px 'robotoregular';
-  }
-  .header__info span {
-    margin-top: -6px;
-    display: block;
-    font: 20px 'robotomedium';
-    color: #efd12e;
-  }
-  .header__info a,
-  .header__info a:hover {
-    font: 12px 'robotolight';
-    color: #fff;
-    text-decoration: underline;
-  }
-  .header__info__links {
-    margin-top: -6px;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    list-style: none;
-  }
-  .header__info__links li a,
-  .header__info__links li a:hover {
-    margin-right: 18px;
-    display: block;
-    float: left;
-    font: 10px 'robotolight';
-    color: #fff;
-    text-decoration: none;
-  }
-}
-@media only screen and (min-width: 1140px) {
   main {
     padding: 40px 0;
     height: auto;
@@ -830,6 +726,120 @@ ul {
   }
   .call-form__content__form input[type=submit]:hover {
     background: #000;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  header {
+    padding: 24px 0;
+    background: #003567;
+  }
+  .logo {
+    display: block;
+    float: left;
+    width: 309px;
+    height: 66px;
+  }
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+  .header__info {
+    height: auto;
+    color: #fff;
+  }
+  .header__info p {
+    margin-top: -6px;
+    font: 12px 'robotoregular';
+  }
+  .header__info span {
+    margin-top: -6px;
+    display: block;
+    font: 20px 'robotomedium';
+    color: #efd12e;
+  }
+  .header__info a,
+  .header__info a:hover {
+    font: 12px 'robotolight';
+    color: #fff;
+    text-decoration: underline;
+  }
+  .header__info__links {
+    margin-top: -6px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+  }
+  .header__info__links li a,
+  .header__info__links li a:hover {
+    margin-right: 18px;
+    display: block;
+    float: left;
+    font: 10px 'robotolight';
+    color: #fff;
+    text-decoration: none;
+  }
+  .header-fixed,
+  .navigation-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+  }
+  .navigation-fixed {
+    top: 112px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1140px) {
+  header {
+    padding: 24px 0;
+    background: #003567;
+  }
+  .logo {
+    display: block;
+    float: left;
+    width: 309px;
+    height: 66px;
+  }
+  .logo img {
+    width: 90%;
+    height: auto;
+  }
+  .header__info {
+    height: auto;
+    color: #fff;
+  }
+  .header__info p {
+    margin-top: -6px;
+    font: 12px 'robotoregular';
+  }
+  .header__info span {
+    margin-top: -6px;
+    display: block;
+    font: 20px 'robotomedium';
+    color: #efd12e;
+  }
+  .header__info a,
+  .header__info a:hover {
+    font: 12px 'robotolight';
+    color: #fff;
+    text-decoration: underline;
+  }
+  .header__info__links {
+    margin-top: -6px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+  }
+  .header__info__links li a,
+  .header__info__links li a:hover {
+    margin-right: 18px;
+    display: block;
+    float: left;
+    font: 10px 'robotolight';
+    color: #fff;
+    text-decoration: none;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 1140px) {
