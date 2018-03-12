@@ -1,0 +1,74 @@
+// normalize
+
+//@import '../styles/normalize.less';
+
+// fonts & variables
+
+@import '../styles/helpers/variables.less';
+@import '../styles/helpers/sprite.less';
+@import '../styles/fonts.css';
+
+// mobile
+
+@import '../blocks/block-footer/mob-footer.css';
+
+// desktop
+
+@import '../blocks/block-footer/footer.css';
+
+// SETTINGS //
+
+// animation
+
+.logo, a, a:hover, li, img, input, textarea, .prev, .next, .popup__icon-close {
+	transition: all 0.5s ease-in-out;
+}
+
+.list__number__element {
+	transition: all 0.2s ease-in-out;
+}
+
+// body
+
+body {
+	cursor: default;
+	overflow-x: hidden !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+.color-red {
+	color: #cd333f;
+}
+
+.color-blue {
+	color: #195abc;
+}
+
+.left {
+	float: left;
+	margin: 0;
+}
+
+.right {
+	float: right;
+}
+
+
+@media only screen and (min-width : @mobile) and  (max-width : @desktop) {
+
+
+
+}
+
+ul {
+	-webkit-padding-start: 0px !important;
+	-moz-padding-start: 0px !important;
+}
+
+.no-margin {
+	margin: 0 !important;
+	float: none !important;
+}

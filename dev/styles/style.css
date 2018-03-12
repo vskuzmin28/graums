@@ -1,0 +1,307 @@
+@import '../styles/fonts.css';
+@import '../blocks/block-footer/mob-footer.css';
+@import '../blocks/block-footer/footer.css';
+.logo,
+a,
+a:hover,
+li,
+img,
+input,
+textarea,
+.prev,
+.next,
+.popup__icon-close {
+  transition: all 0.5s ease-in-out;
+}
+.list__number__element {
+  transition: all 0.2s ease-in-out;
+}
+body {
+  cursor: default;
+  overflow-x: hidden !important;
+}
+a {
+  cursor: pointer;
+}
+.color-red {
+  color: #cd333f;
+}
+.color-blue {
+  color: #195abc;
+}
+.left {
+  float: left;
+  margin: 0;
+}
+.right {
+  float: right;
+}
+ul {
+  -webkit-padding-start: 0px !important;
+  -moz-padding-start: 0px !important;
+}
+.no-margin {
+  margin: 0 !important;
+  float: none !important;
+}
+@media only screen and (min-width: 1140px) {
+  footer {
+    height: 57px;
+    background: #fff;
+  }
+  footer p {
+    font: 12px 'robotoregular';
+    color: #3a3a3a;
+    line-height: 57px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1140px) {
+  footer {
+    height: 57px;
+    background: #fff;
+  }
+  footer p {
+    font: 12px 'robotoregular';
+    color: #3a3a3a;
+    line-height: 57px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1140px) {
+  .call-form {
+    height: 632px;
+    background: #fff url('../img/call-form-bg.jpg') no-repeat center;
+  }
+  .call-form__container {
+    margin: 70px auto;
+    position: relative;
+    width: 1024px;
+    height: 437px;
+    background: 0;
+    border: 15px solid #80a535;
+  }
+  .call-form__content {
+    margin: 0 0 0 -50px;
+    position: absolute;
+    width: 1024px;
+    height: 437px;
+  }
+  .call-form__content__description {
+    float: left;
+    width: 500px;
+  }
+  .call-form__content__description h3 {
+    margin-top: 50px;
+    font: 46px 'muller_regularregular';
+    color: #3c3c3c;
+  }
+  .call-form__content__description p {
+    font: 30px 'muller_regularregular';
+    color: #3c3c3c;
+  }
+  .call-form__content__description__line {
+    margin: 30px 0 40px 0;
+    width: 74px;
+    height: 5px;
+    background: #3c3c3c;
+  }
+  .call-form__content__form {
+    width: 360px;
+    float: right;
+  }
+  .call-form__content__form h6 {
+    margin-top: 20px;
+    font: 24px 'mullerbold';
+    color: #3c3c3c;
+    text-transform: uppercase;
+  }
+  .call-form__content__form p {
+    font: 14px 'mullerlight';
+    color: #3c3c3c;
+  }
+  .call-form__content__form__line {
+    margin: 10px 0 26px 0;
+    width: 74px;
+    height: 3px;
+    background: #606061;
+  }
+  .call-form__content__form__input {
+    width: 336px;
+    height: 52px;
+    margin-bottom: 17px;
+    font: 16px 'mullerlight';
+    color: #000;
+  }
+  .call-form__content__form__input input[type=text] {
+    padding: 0 50px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #5e5f57;
+    border-radius: 3px;
+  }
+  .call-form__content__form__input input[type=text]:hover {
+    border-color: #80a535;
+  }
+  .call-form__content__form__input__name {
+    background: url('../img/icons/icon-1.png') no-repeat 16px 10px;
+  }
+  .call-form__content__form__input__phone {
+    background: url('../img/icons/icon-2.png') no-repeat 16px 10px;
+  }
+  .call-form__content__form__input__email {
+    background: url('../img/icons/icon-3.png') no-repeat 16px 10px;
+  }
+  .call-form__content__form input[type=submit] {
+    margin-top: 10px;
+    width: 290px !important;
+    height: 56px !important;
+    border: 0;
+    border-radius: 3px;
+  }
+  .call-form__content__form input[type=submit]:hover {
+    background: #000;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  .call-form {
+    height: 632px;
+    background: #fff url('../img/call-form-bg.jpg') no-repeat center;
+  }
+  .call-form__container {
+    margin: 70px auto;
+    position: relative;
+    width: 1024px;
+    height: 437px;
+    background: 0;
+    border: 15px solid #80a535;
+  }
+  .call-form__content {
+    margin: 0 0 0 -50px;
+    position: absolute;
+    width: 1024px;
+    height: 437px;
+  }
+  .call-form__content__description {
+    float: left;
+    width: 500px;
+  }
+  .call-form__content__description h3 {
+    margin-top: 50px;
+    font: 46px 'muller_regularregular';
+    color: #3c3c3c;
+  }
+  .call-form__content__description p {
+    font: 30px 'muller_regularregular';
+    color: #3c3c3c;
+  }
+  .call-form__content__description__line {
+    margin: 30px 0 40px 0;
+    width: 74px;
+    height: 5px;
+    background: #3c3c3c;
+  }
+  .call-form__content__form {
+    width: 360px;
+    float: right;
+  }
+  .call-form__content__form h6 {
+    margin-top: 20px;
+    font: 24px 'mullerbold';
+    color: #3c3c3c;
+    text-transform: uppercase;
+  }
+  .call-form__content__form p {
+    font: 14px 'mullerlight';
+    color: #3c3c3c;
+  }
+  .call-form__content__form__line {
+    margin: 10px 0 26px 0;
+    width: 74px;
+    height: 3px;
+    background: #606061;
+  }
+  .call-form__content__form__input {
+    width: 336px;
+    height: 52px;
+    margin-bottom: 17px;
+    font: 16px 'mullerlight';
+    color: #000;
+  }
+  .call-form__content__form__input input[type=text] {
+    padding: 0 50px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #5e5f57;
+    border-radius: 3px;
+  }
+  .call-form__content__form__input input[type=text]:hover {
+    border-color: #80a535;
+  }
+  .call-form__content__form__input__name {
+    background: url('../img/icons/icon-1.png') no-repeat 16px 10px;
+  }
+  .call-form__content__form__input__phone {
+    background: url('../img/icons/icon-2.png') no-repeat 16px 10px;
+  }
+  .call-form__content__form__input__email {
+    background: url('../img/icons/icon-3.png') no-repeat 16px 10px;
+  }
+  .call-form__content__form input[type=submit] {
+    margin-top: 10px;
+    width: 290px !important;
+    height: 56px !important;
+    border: 0;
+    border-radius: 3px;
+  }
+  .call-form__content__form input[type=submit]:hover {
+    background: #000;
+  }
+}
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
