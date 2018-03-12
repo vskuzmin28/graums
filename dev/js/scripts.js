@@ -16,7 +16,7 @@ $('.call-popup, .popup-thanks').hide();
 $('.send-form').submit(function() {
       $.post($(this).attr('action'), $(this).serialize(), function(res) {         
      if (res.success == 1) {
-         $('.call-expert, .manager-consultation, .make-an-order').bPopup().close();
+         $('.call-popup').bPopup().close();
            $('.popup-thanks').bPopup({
              closeClass:'сlose',
                  amsl: 0

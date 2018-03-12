@@ -58,23 +58,23 @@ footer
 
 					// footer call form
 
-					form.footer__call-form(action="/" method="post")
+					form.footer__call-form(action="mail.php" method="post")
 
 						// field
 						.call-form-field
-							input(type="text" name="-" placeholder="Ваше имя" required)
+							input(type="text" name="name" placeholder="Ваше имя" required)
 
 						// field
 						.call-form-field
-							input(type="text" name="-" placeholder="Телефон" required)
+							input(type="text" name="tel" placeholder="Телефон" required)
 
 						// field
 						.call-form-field
-							input(type="text" name="-" placeholder="E-mail" required)
+							input(type="text" name="email" placeholder="E-mail" required)
 
 						// field
 						.call-form-field
-							textarea(name="-" placeholder="Комментарий" required)
+							textarea(name="comment" placeholder="Комментарий" required)
 
 						// field
 						.call-form-field
