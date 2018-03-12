@@ -1,56 +1,57 @@
-// call form
-
-.call-form
+.main-screen
 
 	// container
 
 	.container
 
-		// row
-
 		.row
-
-			// column
 
 			.col-md-12
 
-				// call form container
+				h1
+					| Станки для заточки корончатых сверл под доступной <br/> 
+					| цене от производителя
 
-				.call-form__container
+				p
+					| С гарантией качества и доступной ценой от <br/>
+					| единственного производителя в СНГ
 
-					// content
-					.call-form__content
+		.row
 
-						// description
-						.call-form__content__description
+			.col-md-5
+				img(src="../img/machine.png" alt="@@")
 
-							h3
-								| Архитектурный проект в подарок
+			.col-md-2
 
-							.call-form__content__description__line
+			.col-md-5
 
+				// list
+
+				ul.main-screen__list
+
+					li
+						img(src="../img/icons/icon-1.png" alt="@@")
+						.main-screen__list__info
+							span
+								| Молниеносная окупаемость
 							p
-								| Заполните форму заявки, чтобы получить индивидуальный архитектурный проект каркасного дома в подарок
+								| Вы будете удивлены, когда узнаете о нашей цене на станок
 
-						//  form
-
-						form.call-form__content__form(action="/" method="post")
-
-							h6
-								| ЗАКАЖИТЕ КОНСУЛЬТАЦИЮ
-
-							.call-form__content__form__line
-
-							.call-form__content__form__input
-								input.call-form__content__form__input__name(type="text" name="" placeholder="Имя" required)
-
-							.call-form__content__form__input
-								input.call-form__content__form__input__phone(type="text" name="" placeholder="Телефон" required)
-
-							.call-form__content__form__input
-								input.call-form__content__form__input__email(type="text" name="" placeholder="E-mail" required)
-
+					li
+						img(src="../img/icons/icon-1.png" alt="@@")
+						.main-screen__list__info
+							span
+								| Расширенная гарантия
 							p
-								| Ответ в течение 15 минут
+								| Мы уверены в своем оборудовании и даем гарантию больше
 
-							input.btn-green(type="submit" value="Подробнее")
+					li
+						img(src="../img/icons/icon-1.png" alt="@@")
+						.main-screen__list__info
+							span
+								| Легкость в эксплуатации
+							p
+								| Все отточено до мелочей. Раз-два-три и сверло вновь в работе
+					
+					a.btn-yellow(href="#" title="")
+						| Посмотреть видео
