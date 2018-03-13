@@ -7,23 +7,23 @@ var gulp 			= require('gulp'),
 	pug 			= require('gulp-pug'),
 	less 			= require('gulp-less'),
 	pug 			= require('gulp-pug'),
-	notify 			= require("gulp-notify"), 			// Уведомления об ошибках
-	lessImport 		= require('gulp-less-import'), 		// Ебаный импорт
+	notify 			= require("gulp-notify"), 				// Уведомления об ошибках
+	lessImport 		= require('gulp-less-import'), 			// Ебаный импорт
 	browserSync 	= require('browser-sync'),
-	imagemin 		= require('gulp-imagemin'), 		// Подключаем библиотеку для работы с изображениями
-	pngquant 		= require('imagemin-pngquant'), 	// Подключаем библиотеку для работы с png
-	cache 			= require('gulp-cache'), 			// Подключаем библиотеку кеширования
+	imagemin 		= require('gulp-imagemin'), 			// Подключаем библиотеку для работы с изображениями
+	pngquant 		= require('imagemin-pngquant'), 		// Подключаем библиотеку для работы с png
+	cache 			= require('gulp-cache'), 				// Подключаем библиотеку кеширования
 	spritesmith 	= require('gulp.spritesmith'),
 	clean 			= require('gulp-clean'),
 	concat 			= require('gulp-concat'),
-	autoprefixer 	= require('gulp-autoprefixer'); 	// Библиотека для автоматического добавления префиксов
+	autoprefixer 	= require('gulp-autoprefixer'); 		// Библиотека для автоматического добавления префиксов
 
 // pug to html
 
 gulp.task('pug', function(){
 	return gulp.src('dev/**/*.pug')
 		.pipe(pug({
-			pretty: true 								// Не сжимает страницу на выходе!
+			pretty: true 									// Не сжимает страницу на выходе!
 		}))
 		.on('error', notify.onError(function(err) {
 			return {
@@ -114,14 +114,14 @@ gulp.task('sprite', ['sprite-clean'], function() {
 // optimize images
 
 gulp.task('img', function() {
-	return gulp.src('dev/img/**/*') // Берем все изображения из dev
-		.pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
+	return gulp.src('dev/img/**/*') 			// Берем все изображения из dev
+		.pipe(cache(imagemin({  				// Сжимаем их с наилучшими настройками с учетом кеширования
 			interlaced: true,
 			progressive: true,
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		})))
-		.pipe(gulp.dest('dev/img')); // Выгружаем в pub
+		.pipe(gulp.dest('dev/img')); 			// Выгружаем в pub
 })
 
 // optimize css
@@ -153,7 +153,6 @@ gulp.task('clean-pub', function () {
 // build
 
 gulp.task('build', ['clean-pub', 'pug', 'less'], function() {
-
     var buildFonts = gulp.src('dev/fonts/*.*')
     .pipe(gulp.dest('pub'))
 
@@ -165,5 +164,4 @@ gulp.task('build', ['clean-pub', 'pug', 'less'], function() {
 
     var buildHtml = gulp.src('dev/**/*.html')
     .pipe(gulp.dest('pub'))
-
 })

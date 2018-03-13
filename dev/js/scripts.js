@@ -1,5 +1,16 @@
 // call popup
 
+$('.link-video-popup').click(function (e) {
+  e.preventDefault();
+  $('.popup-video').bPopup({
+    closeClass: 'popup__icon-close',
+    amsl: 0,
+    positionStyle: 'fixed',
+  })
+})
+
+// call popup
+
 $('.link-call-popup').click(function(e){
   e.preventDefault();
   $('.call-popup').bPopup({
@@ -11,7 +22,7 @@ $('.link-call-popup').click(function(e){
 
 // functional call form
 
-$('.call-popup, .popup-thanks').hide();
+$('.call-popup, .popup-thanks, .popup-video').hide();
 
 $('.send-form').submit(function() {
       $.post($(this).attr('action'), $(this).serialize(), function(res) {         

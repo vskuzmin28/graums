@@ -73,7 +73,7 @@
                 <div class="main-screen__list__info"><span>Легкость в эксплуатации</span>
                   <p>Все отточено до мелочей. Раз-два-три и сверло вновь в работе</p>
                 </div>
-              </li><a class="btn-yellow" href="#" title="">Посмотреть видео</a>
+              </li><a class="btn-yellow link-video-popup" href="#" title="">Посмотреть видео</a>
             </ul>
           </div>
         </div>
@@ -86,9 +86,9 @@
         <div class="row">
           <div class="col-md-12">
             <ul class="navigation">
-              <li><a href="#" title="">О производителе</a></li>
+              <li><a data-easing="easeInQuad" href="#about-block" title="">О производителе</a></li>
               <li><a href="#" title="">Главная</a></li>
-              <li><a href="#" title="">Где купить</a></li>
+              <li><a data-easing="easeInQuad" href="#where-buy" title="">Где купить</a></li>
               <li><a href="#" title="">Заточка корончатых сверл</a></li>
               <li><a href="#" title="">Контакты</a></li>
             </ul>
@@ -97,7 +97,7 @@
       </div>
     </nav>
     <!-- about manufacture-->
-    <div class="about-manufacture">
+    <div class="about-manufacture" id="about-block">
       <!-- container-->
       <div class="container">
         <div class="row">
@@ -227,10 +227,17 @@
             <p>Сделано <br/> в России</p>
           </li>
         </ul>
+        <!-- buttons-->
+        <div class="row adv-margin">
+          <div class="col-md-3"></div>
+          <div class="col-md-3"><a class="btn-yellow link-call-popup" href="#" title="">Получить информацию</a></div>
+          <div class="col-md-3"><a class="btn-yellow link-call-popup" href="#" title="">Задать вопрос онлайн</a></div>
+          <div class="col-md-3"></div>
+        </div>
       </div>
     </div>
     <!-- where buy-->
-    <div class="where-buy">
+    <div class="where-buy" id="where-buy">
       <!-- container-->
       <div class="container">
         <div class="row">
@@ -367,6 +374,10 @@
     <div class="popup popup-thanks">
       <!-- icon close--><a class="popup__icon-close" href="#" title=""><img src="../img/icon-close.png" alt=""></a>
       <p>Спасибо! Ваша заявка успешно отравлена!</p>
+    </div>
+    <div class="popup popup-video">
+      <!-- icon close--><a class="popup__icon-close" href="#" title=""><img src="../img/icons/icon-close.png" alt=""></a>
+      <!-- content--><iframe width="560" height="315" src="https://www.youtube.com/embed/GX2L5OaA0U4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
     <!-- scripts-->
     <script src="../js/jquery-3.2.1.min.js"></script>

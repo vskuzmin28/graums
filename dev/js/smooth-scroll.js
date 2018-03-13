@@ -34,7 +34,7 @@
 
 		// Speed & Easing
 		speed: 500,
-		offset: 0,
+		offset: 300,
 		easing: 'easeInOutCubic',
 		customEasing: null,
 

@@ -1,7 +1,7 @@
 {
   "name": "byggahusen",
   "version": "1.0",
-  "description": "landing page byggahusen",
+  "description": "site graums",
   "main": "a",
   "dependencies": {
     "browser-sync": "^2.18.12",
